@@ -1,4 +1,4 @@
-dogfiles
+**dogfiles**
 
 de-stress, it's just my dotfiles...
 
