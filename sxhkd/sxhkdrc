@@ -1,0 +1,9 @@
+# Basic binds
+super + Return
+	$TERMINAL
+
+super + d
+	dmenu_run
+
+Print
+	import ~/pictures/latest-screenshot.png1
