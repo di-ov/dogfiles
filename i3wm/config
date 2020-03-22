@@ -7,16 +7,19 @@ set $mod Mod4
 # ========================================================================================================================
 # Styling
 # ========================================================================================================================
-
-
 # pango is used to be able to render FreeType (freetype.org) fonts
 font pango:Ubuntu 8.5
+default_border pixel 5
+hide_edge_borders smart
+
+# ========================================================================================================================
+# Apps specific
+# ========================================================================================================================
+for_window [class="zoom"] floating enable
 
 # ========================================================================================================================
 # Execute once per login/session
 # ========================================================================================================================
-
-
 exec --no-startup-id nm-applet
 
 # ========================================================================================================================
@@ -37,12 +40,11 @@ bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 
-
 # ========================================================================================================================
 # Floating
 # ========================================================================================================================
 floating_modifier $mod
-floating_maximum_size 1150 x 800
+floating_maximum_size 1400 x 900
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -56,6 +58,7 @@ bindsym --whole-window $mod+button3 floating toggle
 # The middle button and a modifer over any part of the window kills the window
 bindsym --whole-window $mod+button2 kill
 
+# Note: mod + shift + right button(3) resizes
 
 # ========================================================================================================================
 # Window focus & move
@@ -157,3 +160,10 @@ bindsym $mod+4 mode "resize"
 bar {
         status_command i3status
 }
+
+# ========================================================================================================================
+# Extra
+# ========================================================================================================================
+
+# Setup language toggle
+exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,bg -variant ,phonetic"
