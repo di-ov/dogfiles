@@ -17,7 +17,6 @@ font pango:Ubuntu 8.5
 # ========================================================================================================================
 
 
-
 exec --no-startup-id nm-applet
 
 # ========================================================================================================================
@@ -51,6 +50,13 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
+# The right button toggles floating
+bindsym --whole-window $mod+button3 floating toggle
+
+# The middle button and a modifer over any part of the window kills the window
+bindsym --whole-window $mod+button2 kill
+
+
 # ========================================================================================================================
 # Window focus & move
 # ========================================================================================================================
@@ -65,7 +71,13 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # ========================================================================================================================
-# Various shortcuts
+# General shortcuts
+# ========================================================================================================================
+bindsym $mod+Return exec --no-startup-id tilix
+bindsym $mod+1 exec --no-startup-id dmenu_run
+
+# ========================================================================================================================
+# i3 specific shortcuts
 # ========================================================================================================================
 bindsym $mod+grave kill
 bindsym $mod+h split h
@@ -82,34 +94,37 @@ bindsym $mod+6 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do 
 # ========================================================================================================================
 # Workspaces
 # ========================================================================================================================
-set $wsQ "q"
-set $wsW "w"
-set $wsE "e"
-set $wsR "r"
-set $wsA "a"
-set $wsS "s"
-set $wsD "d"
-set $wsF "f"
+set $wsQ "Q"
+set $wsW "W"
+set $wsE "E"
+set $wsR "R"
+set $wsA "A"
+set $wsS "S"
+set $wsD "D"
+set $wsF "F"
 
 # switch to workspace
-bindsym $mod+q workspace number $wsQ
-bindsym $mod+w workspace number $wsW
-bindsym $mod+e workspace number $wsE
-bindsym $mod+r workspace number $wsR
-bindsym $mod+a workspace number $wsA
-bindsym $mod+s workspace number $wsS
-bindsym $mod+d workspace number $wsD
-bindsym $mod+f workspace number $wsF
+bindsym $mod+q workspace  $wsQ
+bindsym $mod+w workspace  $wsW
+bindsym $mod+e workspace  $wsE
+bindsym $mod+r workspace  $wsR
+bindsym $mod+a workspace  $wsA
+bindsym $mod+s workspace  $wsS
+bindsym $mod+d workspace  $wsD
+bindsym $mod+f workspace  $wsF
 
 # move focused container to workspace
-bindsym $mod+Shift+q move container to workspace number $wsQ
-bindsym $mod+Shift+w move container to workspace number $wsW
-bindsym $mod+Shift+e move container to workspace number $wsE
-bindsym $mod+Shift+r move container to workspace number $wsR
-bindsym $mod+Shift+a move container to workspace number $wsA
-bindsym $mod+Shift+s move container to workspace number $wsS
-bindsym $mod+Shift+d move container to workspace number $wsD
-bindsym $mod+Shift+f move container to workspace number $wsF
+bindsym $mod+Shift+q move container to workspace  $wsQ
+bindsym $mod+Shift+w move container to workspace  $wsW
+bindsym $mod+Shift+e move container to workspace  $wsE
+bindsym $mod+Shift+r move container to workspace  $wsR
+bindsym $mod+Shift+a move container to workspace  $wsA
+bindsym $mod+Shift+s move container to workspace  $wsS
+bindsym $mod+Shift+d move container to workspace  $wsD
+bindsym $mod+Shift+f move container to workspace  $wsF
+
+# extra tweaks
+bindsym $mod+Tab workspace back_and_forth
 
 # ========================================================================================================================
 # Resize mode
@@ -120,10 +135,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+        bindsym Left resize shrink width 5 px or 5 ppt
+        bindsym Down resize grow height 5 px or 5 ppt
+        bindsym Up resize shrink height 5 px or 5 ppt
+        bindsym Right resize grow width 5 px or 5 ppt
 
         # back to normal
         bindsym Return mode "default"

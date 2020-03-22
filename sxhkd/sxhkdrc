@@ -1,8 +1,7 @@
-# Basic binds
 super + Return
 	$TERMINAL
 
-super + d
+super + 1
 	dmenu_run
 
 Print
