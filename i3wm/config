@@ -4,27 +4,23 @@
 
 set $mod Mod4
 
-# ========================================================================================================================
+# =================================================================
 # Styling
-# ========================================================================================================================
+# =================================================================
 # pango is used to be able to render FreeType (freetype.org) fonts
 font pango:Ubuntu 8.5
 default_border pixel 5
 hide_edge_borders smart
 
-# ========================================================================================================================
-# Apps specific
-# ========================================================================================================================
-for_window [class="zoom"] floating enable
 
-# ========================================================================================================================
+# =================================================================
 # Execute once per login/session
-# ========================================================================================================================
+# =================================================================
 exec --no-startup-id nm-applet
 
-# ========================================================================================================================
+# =================================================================
 # Locking
-# ========================================================================================================================
+# =================================================================
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
@@ -32,17 +28,17 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 bindsym $mod+l exec i3lock
 
-# ========================================================================================================================
+# =================================================================
 # Audio
-# ========================================================================================================================
+# =================================================================
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ -10% && $refresh_i3status
 bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
 
-# ========================================================================================================================
+# =================================================================
 # Floating
-# ========================================================================================================================
+# =================================================================
 floating_modifier $mod
 floating_maximum_size 1400 x 900
 
@@ -60,9 +56,9 @@ bindsym --whole-window $mod+button2 kill
 
 # Note: mod + shift + right button(3) resizes
 
-# ========================================================================================================================
+# =================================================================
 # Window focus & move
-# ========================================================================================================================
+# =================================================================
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -73,65 +69,73 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# ========================================================================================================================
+# =================================================================
 # General shortcuts
-# ========================================================================================================================
+# =================================================================
 bindsym $mod+Return exec --no-startup-id tilix
-bindsym $mod+1 exec --no-startup-id dmenu_run
+bindsym $mod+d exec --no-startup-id dmenu_run
 
-# ========================================================================================================================
+# =================================================================
 # i3 specific shortcuts
-# ========================================================================================================================
+# =================================================================
 bindsym $mod+grave kill
 bindsym $mod+h split h
 bindsym $mod+v split v
-bindsym $mod+g fullscreen toggle
-bindsym $mod+2 layout toggle split
-bindsym $mod+3 layout tabbed
+bindsym $mod+f fullscreen toggle
+bindsym $mod+a layout toggle split
+bindsym $mod+s layout tabbed
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+5 restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+6 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
-# ========================================================================================================================
+# =================================================================
 # Workspaces
-# ========================================================================================================================
-set $wsQ "1#Q"
-set $wsW "2#W"
-set $wsE "3#E"
-set $wsR "4#R"
-set $wsA "5#A"
-set $wsS "6#S"
-set $wsD "7#D"
-set $wsF "8#F"
+# =================================================================
+set $ws1 "1#"
+set $ws2 "2#"
+set $ws3 "3#"
+set $ws4 "4#"
+set $wsQ "5#Q"
+set $wsW "6#W"
+set $wsE "7#E"
 
 # switch to workspace
+bindsym $mod+1 workspace  $ws1
+bindsym $mod+2 workspace  $ws2
+bindsym $mod+3 workspace  $ws3
+bindsym $mod+4 workspace  $ws4
 bindsym $mod+q workspace  $wsQ
 bindsym $mod+w workspace  $wsW
 bindsym $mod+e workspace  $wsE
-bindsym $mod+r workspace  $wsR
-bindsym $mod+a workspace  $wsA
-bindsym $mod+s workspace  $wsS
-bindsym $mod+d workspace  $wsD
-bindsym $mod+f workspace  $wsF
 
 # move focused container to workspace
-bindsym $mod+Shift+q move container to workspace  $wsQ
-bindsym $mod+Shift+w move container to workspace  $wsW
-bindsym $mod+Shift+e move container to workspace  $wsE
-bindsym $mod+Shift+r move container to workspace  $wsR
-bindsym $mod+Shift+a move container to workspace  $wsA
-bindsym $mod+Shift+s move container to workspace  $wsS
-bindsym $mod+Shift+d move container to workspace  $wsD
-bindsym $mod+Shift+f move container to workspace  $wsF
+bindsym $mod+Shift+1 move container to workspace $ws1
+bindsym $mod+Shift+2 move container to workspace $ws2
+bindsym $mod+Shift+3 move container to workspace $ws3
+bindsym $mod+Shift+4 move container to workspace $ws4
+bindsym $mod+Shift+q move container to workspace $wsQ
+bindsym $mod+Shift+w move container to workspace $wsW
+bindsym $mod+Shift+e move container to workspace $wsE
 
 # extra tweaks
 bindsym $mod+Tab workspace back_and_forth
 
-# ========================================================================================================================
+# =================================================================
+# Apps specific
+# =================================================================
+for_window [class="zoom"] floating enable
+
+assign [class="Brave-browser"] $ws1
+assign [class="jetbrains-datagrip"] $wsQ
+assign [class="Microsoft Teams"] $wsE
+assign [class="zoom"] $wsE
+
+
+# =================================================================
 # Resize mode
-# ========================================================================================================================
+# =================================================================
 mode "resize" {
 
         # Pressing left will shrink the window’s width.
@@ -149,11 +153,11 @@ mode "resize" {
         bindsym $mod+r mode "default"
 }
 
-bindsym $mod+4 mode "resize"
+bindsym $mod+r mode "resize"
 
-# ========================================================================================================================
+# =================================================================
 # Bar
-# ========================================================================================================================
+# =================================================================
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -161,9 +165,9 @@ bar {
         status_command i3status
 }
 
-# ========================================================================================================================
+# =================================================================
 # Extra
-# ========================================================================================================================
+# =================================================================
 
 # Setup language toggle
 exec "setxkbmap -option 'grp:alt_shift_toggle' -layout us,bg -variant ,phonetic"
