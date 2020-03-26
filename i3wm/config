@@ -78,16 +78,17 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # i3 specific shortcuts
 # =================================================================
 bindsym $mod+grave kill
-bindsym $mod+h split h
-bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
-bindsym $mod+a layout toggle split
-bindsym $mod+s layout tabbed
+bindsym $mod+s layout toggle split
+bindsym $mod+a layout tabbed
+
+bindsym $mod+apostrophe focus parent
+bindsym $mod+semicolon split toggle
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+5 restart
+bindsym $mod+9 restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+6 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+0 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # =================================================================
 # Workspaces
@@ -95,7 +96,7 @@ bindsym $mod+6 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do 
 set $ws1 "1#"
 set $ws2 "2#"
 set $ws3 "3#"
-set $ws4 "4#"
+set $ws4 "#4"
 set $wsQ "5#Q"
 set $wsW "6#W"
 set $wsE "7#E"
