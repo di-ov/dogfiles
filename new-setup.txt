@@ -32,18 +32,28 @@ apt-get install intel-microcode
 sudo apt-get install man-db
 sudo apt-get install curl
 sudo apt install xorg
-sudo apt install i3
+
+# How to install i3 
+check the wobsite
+
+
+sudo apt install lm-sensors
+sudo apt install pcmanfm
+sudo apt install htop
 
 # Install micro (install )
 curl https://getmic.ro | bash
 sudo mv micro /usr/local/bin
 
- # Work
+# Mostly work:
+For open vpn to work:
+sudo apt install openvpn 
+sudo apt install network-manager-openvpn-gnome
 
- # Skaffold
- curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64
-chmod +x skaffold
-sudo mv skaffold /usr/local/bin
+# Kubectl,  Skaffold, Helm, Minikube, Db client (datagrip)
+Check websites
 
-# Minikube
-
+# Teams
+download deb
+# Zoom
+download deb
