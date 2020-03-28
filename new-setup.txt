@@ -1,0 +1,49 @@
+Workflow ideas:
+1. Have a pre configured layouts i.e. ( 2horiz 1 vert)
+
+2. Start using the scratch pad in i3
+
+3. For changing workspaces use alt + shift
+# Introduction
+
+4. Change workspaces with q,w,e,r 
+5. Close with mod + `
+
+Extra
+For automatic screen config - https://github.com/phillipberndt/autorandr
+
+
+# I've used some knowledge from here and here bla
+
+# All external binaries are installed in /usr/local/bin
+
+1.
+# Update resources list. Replace /etc/apt/sources.list
+# We want to use main and contrin repos only (I think)
+# For Apt pinning: 
+https://wiki.debian.org/AptConfiguration?action=show&redirect=AptPreferences
+https://serverfault.com/questions/240920/how-do-i-enable-non-free-packages-on-debian
+https://unix.stackexchange.com/questions/284582/how-to-block-non-free-with-apt-preferences?noredirect=1&lq=1
+
+# Install microcode. For why is it needed refer to https://wiki.debian.org/Microcode
+apt-get install intel-microcode
+
+# Install various packages
+sudo apt-get install man-db
+sudo apt-get install curl
+sudo apt install xorg
+sudo apt install i3
+
+# Install micro (install )
+curl https://getmic.ro | bash
+sudo mv micro /usr/local/bin
+
+ # Work
+
+ # Skaffold
+ curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64
+chmod +x skaffold
+sudo mv skaffold /usr/local/bin
+
+# Minikube
+
