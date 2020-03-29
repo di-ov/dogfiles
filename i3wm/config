@@ -93,13 +93,13 @@ bindsym $mod+9 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do 
 # =================================================================
 # Workspaces
 # =================================================================
-set $ws1 "1#"
-set $ws2 "2#"
-set $ws3 "3#"
-set $ws4 "#4"
-set $wsQ "5#Q"
-set $wsW "6#W"
-set $wsE "7#E"
+set $ws1 "1} "
+set $ws2 "2} "
+set $ws3 "3} "
+set $ws4 " {4}"
+set $wsQ "5Q} "
+set $wsW "6W}"
+set $wsE "7E} "
 
 # switch to workspace
 bindsym $mod+1 workspace  $ws1
