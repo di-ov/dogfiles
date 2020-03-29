@@ -1,19 +1,15 @@
+About X:
+
+
 Workflow ideas:
 1. Have a pre configured layouts i.e. ( 2horiz 1 vert)
 
 2. Start using the scratch pad in i3
 
-3. For changing workspaces use alt + shift
-# Introduction
-
-4. Change workspaces with q,w,e,r 
-5. Close with mod + `
-
 Extra
 For automatic screen config - https://github.com/phillipberndt/autorandr
 
 
-# I've used some knowledge from here and here bla
 
 # All external binaries are installed in /usr/local/bin
 
@@ -37,7 +33,6 @@ sudo apt install xss-lock
 # How to install i3 
 check the wobsite
 
-
 sudo apt install lm-sensors
 sudo apt install pcmanfm
 sudo apt install htop
@@ -47,14 +42,13 @@ curl https://getmic.ro | bash
 sudo mv micro /usr/local/bin
 
 # Mostly work:
+
 For open vpn to work:
 sudo apt install openvpn 
 sudo apt install network-manager-openvpn-gnome
 
-# Kubectl,  Skaffold, Helm, Minikube, Db client (datagrip)
+# Kubectl, Skaffold, Helm, Minikube, Db client (datagrip)
 Check websites
 
-# Teams
-download deb
-# Zoom
-download deb
+# Teams, Zoom
+download deb package
