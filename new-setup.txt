@@ -32,6 +32,7 @@ apt-get install intel-microcode
 sudo apt-get install man-db
 sudo apt-get install curl
 sudo apt install xorg
+sudo apt install xss-lock
 
 # How to install i3 
 check the wobsite

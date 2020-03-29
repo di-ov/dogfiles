@@ -86,9 +86,9 @@ bindsym $mod+apostrophe focus parent
 bindsym $mod+semicolon split toggle
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+9 restart
+bindsym $mod+0 restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+0 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+9 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # =================================================================
 # Workspaces
@@ -163,6 +163,9 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+        colors {
+          separator #000000
+    }
 }
 
 # =================================================================
