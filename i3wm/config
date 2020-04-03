@@ -8,10 +8,23 @@ set $mod Mod4
 # Styling
 # =================================================================
 # pango is used to be able to render FreeType (freetype.org) fonts (this font is also used by the bar!!)
+
 font pango:Ubuntu Medium 8.5
-default_border pixel 5
+default_border pixel 2
 hide_edge_borders smart
 
+# Get colors from ~/.Xresources
+set_from_resource       $black          black
+set_from_resource       $green          green
+set_from_resource       $blue           blue
+set_from_resource       $red            red
+set_from_resource       $yellow         yellow
+
+# class                 border   backgr.  text     indicator  child_border
+client.focused          $yellow  $yellow  $black   $blue      $yellow
+client.focused_inactive $black   $black   $yellow  $blue      $black
+client.unfocused        $black   $black   $yellow  $blue      $black
+client.urgent           $red     $red     $yellow  $red       $red
 
 # =================================================================
 # Execute once per login/session
@@ -161,13 +174,6 @@ bindsym $mod+r mode "resize"
 # =================================================================
 # Bar
 # =================================================================
-
-# Get colors from ~/.Xresources
-set_from_resource       $black          black
-set_from_resource       $green          green
-set_from_resource       $blue           blue
-set_from_resource       $red            red
-set_from_resource       $yellow         yellow
 
 bar {
         status_command i3status
