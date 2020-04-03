@@ -1,0 +1,24 @@
+
+
+*.black:       	#000000
+*.white:       	#ffffff
+
+
+! red
+*.color1:       #cc6666
+*.color9:       #900000
+
+! green
+*.color2:       #81a2be
+*.color10:      #81a2be
+
+! yellow
+*.color3:       #f0c674
+*.color11:      #f0c674
+
+! blue
+*.color4:       #81a2be
+*.color12:      #81a2be
+
+! white
+*.color15:      #c5c8c6

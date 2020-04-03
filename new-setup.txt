@@ -13,6 +13,8 @@ For automatic screen config - https://github.com/phillipberndt/autorandr
 
 # All external binaries are installed in /usr/local/bin
 
+# Screenshoter maim
+
 1.
 # Update resources list. Replace /etc/apt/sources.list
 # We want to use main and contrin repos only (I think)
@@ -29,6 +31,9 @@ sudo apt-get install man-db
 sudo apt-get install curl
 sudo apt install xorg
 sudo apt install xss-lock
+sudo apt install xbacklight -- explain how to do the config
+
+# SEE HOW to install themes
 
 # How to install i3 
 check the wobsite
@@ -47,8 +52,9 @@ For open vpn to work:
 sudo apt install openvpn 
 sudo apt install network-manager-openvpn-gnome
 
-# Kubectl, Skaffold, Helm, Minikube, Db client (datagrip)
+# Kubectl, Skaffold, Helm, Minikube, docker, docker-compose, node, Db client (datagrip)
 Check websites
 
 # Teams, Zoom
 download deb package
+

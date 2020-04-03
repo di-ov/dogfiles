@@ -13,13 +13,14 @@ battery all {
         integer_battery_capacity = true
         status_chr = "🔌"
         status_bat = ""
+        status_full = ""
         low_threshold = 40
 }
 
-# Will get colored when the free memory is less than 3.5G
+# Will get colored when the free memory is less than 3G
 memory {
         format = " %used"
-        threshold_degraded = "3.5G"
+        threshold_degraded = "3G"
         format_degraded = " %used"
 }
 
