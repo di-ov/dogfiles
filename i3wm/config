@@ -162,30 +162,28 @@ bindsym $mod+r mode "resize"
 # Bar
 # =================================================================
 
-# Set colors from ~/.Xresources
-set_from_resource       $color2         color2
-set_from_resource       $color3         color3
-set_from_resource       $color4         color4
+# Get colors from ~/.Xresources
+set_from_resource       $black          black
+set_from_resource       $green          green
+set_from_resource       $blue           blue
+set_from_resource       $red            red
+set_from_resource       $yellow         yellow
 
-
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
 bar {
-        
-
         status_command i3status
         separator_symbol " "
         strip_workspace_numbers yes
 
         colors {
-                background #111010
-                statusline #C8F1D1 
-                #<colorclass>      <border> <background> <text>
-                focused_workspace  #111010 #0000ff #C8F1D1
-                active_workspace   #111010 #5f676a #C8F1D1
-                inactive_workspace #111010 #111010 #C8F1D1
-                urgent_workspace   #111010 #900000 #C8F1D1
-                binding_mode       #111010 #900000 #C8F1D1
+                background $black
+                statusline $green
+
+                #<class>                <border>       <background>     <text>
+                focused_workspace       $black         $blue            $green
+                active_workspace        $black         $yellow          $blue
+                inactive_workspace      $black         $black           $green
+                urgent_workspace        $black         $red             $green
+                binding_mode            $black         $red             $green
      }
 }
 
