@@ -134,6 +134,7 @@ bindsym $mod+Shift+e move container to workspace $wsE
 
 # extra tweaks
 bindsym $mod+Tab workspace back_and_forth
+default_orientation vertical
 
 # =================================================================
 # Apps specific
