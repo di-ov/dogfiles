@@ -3,15 +3,12 @@ About X:
 
 Workflow ideas:
 1. Have a pre configured layouts i.e. ( 2horiz 1 vert)
-
 2. Start using the scratch pad in i3
 
 Extra
 For automatic screen config - https://github.com/phillipberndt/autorandr
 
-
-
-# All external binaries are installed in /usr/local/bin
+# All external binaries are installed in /usr/local/bin --> make an env var for that
 
 # Screenshoter maim
 

@@ -136,6 +136,10 @@ bindsym $mod+Shift+e move container to workspace $wsE
 bindsym $mod+Tab workspace back_and_forth
 default_orientation vertical
 
+# scratchpad
+bindsym $mod+Shift+z move scratchpad
+bindsym $mod+z scratchpad show
+
 # =================================================================
 # Apps specific
 # =================================================================
@@ -143,6 +147,8 @@ for_window [class="zoom"] floating enable
 for_window [class="vlc"] floating enable 
 for_window [class="Microsoft Teams"] floating enable border none
 for_window [class="Pavucontrol"] floating enable
+
+for_window [class="Pcmanfm"] move scratchpad
 
 assign [class="Brave-browser"] $ws1
 assign [class="jetbrains-datagrip"] $wsQ
