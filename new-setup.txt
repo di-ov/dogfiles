@@ -1,10 +1,7 @@
-About X:
-
 
 Workflow ideas:
 1. Have a pre configured layouts i.e. ( 2horiz 1 vert)
-2. Start using the scratch pad in i3
-
+2. Multy monitor config
 Extra
 For automatic screen config - https://github.com/phillipberndt/autorandr
 
