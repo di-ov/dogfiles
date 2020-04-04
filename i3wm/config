@@ -13,6 +13,8 @@ font pango:Ubuntu Medium 8.5
 default_border pixel 2
 hide_edge_borders smart
 
+exec_always pcmanfc
+
 # Get colors from ~/.Xresources
 set_from_resource       $black          black
 set_from_resource       $green          green
@@ -147,6 +149,8 @@ for_window [class="zoom"] floating enable
 for_window [class="vlc"] floating enable 
 for_window [class="Microsoft Teams"] floating enable border none
 for_window [class="Pavucontrol"] floating enable
+for_window [class="feh"] floating enable
+
 
 for_window [class="Pcmanfm"] move scratchpad
 
