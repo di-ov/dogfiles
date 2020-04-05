@@ -12,6 +12,11 @@ Low prio TODO:
 	https://unix.stackexchange.com/questions/284582/how-to-block-non-free-with-apt-preferences?noredirect=1&lq=1
 - See how to automate the config of xbacklight
 - See how to fix pcmanfm pop ups when used with i3 scratchpad
+- See where is the pcmanfm dotfiles folder
+- Check battery life settings and TLP - https://vitux.com/how-to-improve-notebook-battery-life-in-debian-with-tlp/
+- Use the i3-status-rust package for the bar
+
+
 
 
 Extra:

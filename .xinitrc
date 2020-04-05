@@ -4,7 +4,7 @@
 xrdb ~/.Xresources &
 
 # Start default apps
-nm-applet &
+# nm-applet &
 
 # Set wallpaper
 # feh

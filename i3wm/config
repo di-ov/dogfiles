@@ -7,13 +7,13 @@ set $mod Mod4
 # =================================================================
 # Styling
 # =================================================================
-# pango is used to be able to render FreeType (freetype.org) fonts (this font is also used by the bar!!)
 
+# pango is used to be able to render FreeType (freetype.org) fonts (this font is also used by the bar!!)
 font pango:Ubuntu Medium 8.5
+
 default_border pixel 2
 hide_edge_borders smart
 
-exec_always pcmanfc
 
 # Get colors from ~/.Xresources
 set_from_resource       $black          black
