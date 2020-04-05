@@ -1,0 +1,19 @@
+TODO:
+- Setup configured layouts i.e. ( 2horiz 1 vert)
+- Setup multi-monitor config
+- All external binaries should be installed in /usr/local/bin --> make an env var for that
+- Setup Screenshoter "maim"  
+
+Low prio TODO:
+- Get rid of non-free packages and pin only specific ones (like microcode) to use non-free repos
+  Apt pinning: 
+	https://wiki.debian.org/AptConfiguration?action=show&redirect=AptPreferences
+	https://serverfault.com/questions/240920/how-do-i-enable-non-free-packages-on-debian
+	https://unix.stackexchange.com/questions/284582/how-to-block-non-free-with-apt-preferences?noredirect=1&lq=1
+- See how to automate the config of xbacklight
+- See how to fix pcmanfm pop ups when used with i3 scratchpad
+
+
+Extra:
+- For automatic screen config - https://github.com/phillipberndt/autorandr
+

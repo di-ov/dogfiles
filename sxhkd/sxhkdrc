@@ -1,8 +1,0 @@
-super + Return
-	$TERMINAL
-
-super + 1
-	dmenu_run
-
-Print
-	import ~/pictures/latest-screenshot.png1

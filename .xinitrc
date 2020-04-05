@@ -5,7 +5,6 @@ xrdb ~/.Xresources &
 
 # Start default apps
 nm-applet &
-pcmanfm &
 
 # Set wallpaper
 # feh
