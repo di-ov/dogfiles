@@ -1,6 +1,9 @@
 # Setup prompt:
-autoload -Uz colors && colors	# Load colors
-PS1="%B%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
+PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
+PS1="%B%F{green}%~%f %F{white}$%f %b"
+
 
 # Configure history
 HISTSIZE=100000
