@@ -1,5 +1,3 @@
-
-
 ###### Line selection shortcuts
 # https://gist.github.com/jamietre/65869c073119bb68f283e635cf6463b1
 # https://stackoverflow.com/a/30899296
@@ -60,10 +58,10 @@ for key     kcap   seq        mode     widget (
 bindkey '^q' push-line-or-edit # Stores line in a buffer, and shows it again after you hit enter
 bindkey '^x' kill-whole-line # Clears line, why its slow - https://stackoverflow.com/questions/31088455/how-to-correctly-remap-a-key-binding-in-zsh
 
-# Setup custom shortcuts 
-source ~/dogfiles/zsh/nnn-quitcd.bash_zsh.sh
+############## Setup custom shortcuts 
 
 # Open nnn with a shortcut
+source ~/dogfiles/zsh/nnn-quitcd.bash_zsh.sh
 function run_nnn {
      n < $TTY
      zle reset-prompt
