@@ -1,9 +1,5 @@
-# Setup prompt:
-
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-
-PS1="%B%F{green}%~%f %F{white}$%f %b"
-
+# Promt. Available colors are: black, red, green, yellow, blue, magenta, cyan, white
+PS1="%B%F{green}%~%f %F{white}$%f %b" 
 
 # Configure history
 HISTSIZE=100000
@@ -19,7 +15,11 @@ zstyle ':completion:*' matcher-list '+m:{[:lower:][:upper:]}={[:upper:][:lower:]
 
 autoload -Uz compinit && compinit
 
+# Setup custom shortcuts 
+source ~/dogfiles/zsh/shortcuts.sh
 
-# Misc config
-stty stop undef	# Disable ctrl-s to freeze terminal.
+# Misc
 setopt AUTO_CD # Automatically cd into typed directory.
+
+
+

@@ -1,6 +1,7 @@
 TODO:
 - Setup configured layouts i.e. ( 2horiz 1 vert)
 - Setup multi-monitor config
+- Configure "nnn"
 - All external binaries should be installed in /usr/local/bin --> make an env var for that
 - Setup Screenshoter "maim"  
 - Look into terminal file manger and set up with zsh widgets
