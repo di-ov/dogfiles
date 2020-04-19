@@ -87,7 +87,6 @@ stty werase undef
 stty kill undef
 stty start undef
 stty lnext undef
-stty erase undef
 stty discard undef
 stty quit undef
 stty rprnt undef
