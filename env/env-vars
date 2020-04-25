@@ -1,3 +1,5 @@
 export EDITOR="micro"
-export FILE_MANAGER="pcmanfm"
+export FILE="pcmanfm"
 export TERMINAL="tilix"
+export TERM="alacritty"
+

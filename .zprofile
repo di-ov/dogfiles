@@ -1,6 +1,6 @@
 # Profile file, runs on login.
 
-# Setup env vars
+# Setup env
 for DOTFILE in `find ~/dogfiles/env`
 do
   [ -f “$DOTFILE” ] && source “$DOTFILE”
