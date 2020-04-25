@@ -27,6 +27,7 @@ apt install intel-microcode \
  				 pulseaudio \
  				pavucontrol \
  					   cmus \
+ 					   feh  \
  				 	    zsh -y		 	    
 
 # Why microcode is needed refer to https://wiki.debian.org/Microcode
