@@ -5,7 +5,6 @@ general {
 
 order += "volume master"
 order += "battery all"
-order += "memory"
 order += "tztime local"
 
 battery all {
@@ -15,13 +14,6 @@ battery all {
         status_bat = ""
         status_full = ""
         low_threshold = 40
-}
-
-# Will get colored when the free memory is less than 3G
-memory {
-        format = " %used"
-        threshold_degraded = "3G"
-        format_degraded = " %used"
 }
 
 tztime local {
