@@ -21,5 +21,5 @@ source ~/dogfiles/zsh/shortcuts.sh
 # Misc
 setopt AUTO_CD # Automatically cd into typed directory.
 
-# Enable line syntax higlighting, must be at the end
-source ~/dogfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source ~/dogfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh # Enable auto suggestions
+# source ~/dogfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # Enable line syntax higlighting, must be at the end
