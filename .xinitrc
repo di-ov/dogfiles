@@ -3,10 +3,10 @@
 # Load .Xresources
 xrdb ~/.Xresources &
 
-# Start default apps
-# nm-applet &
+# Here you can start default apps
+# nm-applet & # this one is currently ran by i3wm
 
 # Set wallpaper
-# feh
+feh --bg-center ~/.wallpaper.jpg
 
 exec i3
