@@ -86,7 +86,7 @@ bindsym $mod+Shift+Right move right
 # =================================================================
 # General shortcuts
 # =================================================================
-bindsym $mod+Return exec --no-startup-id tilix
+bindsym $mod+Return exec --no-startup-id $TERMINAL
 bindsym $mod+d exec --no-startup-id dmenu_run
 
 # =================================================================
