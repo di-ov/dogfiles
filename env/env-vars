@@ -1,5 +1,0 @@
-export EDITOR="micro"
-export FILE="pcmanfm"
-export TERMINAL="tilix"
-export TERM="alacritty"
-

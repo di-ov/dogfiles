@@ -1,4 +1,4 @@
-# xinitrc runs automatically when you run "startx".
+# xinitrc is sourced when you run "startx"
 
 # Load .Xresources
 xrdb ~/.Xresources &

@@ -21,5 +21,18 @@ source ~/dogfiles/zsh/shortcuts.sh
 # Misc
 setopt AUTO_CD # Automatically cd into typed directory.
 
+alias cp="cp -iv" \
+	  mv="mv -iv" \
+	  rm="rm -v" \
+	  mkdir="mkdir -pv" \
+	  ls="exa -g --group-directories-first" \
+	  grep="grep --color=auto" \
+	  g="git" \
+	  f="$FILE" \
+	  e="$EDITOR" \
+	  t="$TERM" 
+
+	
+
 # source ~/dogfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh # Enable auto suggestions
 # source ~/dogfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # Enable line syntax higlighting, must be at the end
