@@ -28,7 +28,10 @@ apt install intel-microcode \
  				pavucontrol \
  					   cmus \
  					   feh  \
- 				 	    zsh -y		 	    
+ 					   nnn  \
+ 			network-manager \
+ 	  network-manager-gnome \
+  				 	    zsh -y		 	    
 
 # Why microcode is needed refer to https://wiki.debian.org/Microcode
 
