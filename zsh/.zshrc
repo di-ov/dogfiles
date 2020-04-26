@@ -1,5 +1,5 @@
 # Promt. Available colors are: black, red, green, yellow, blue, magenta, cyan, white
-PS1="%B%F{green}%~%f %F{white}$%f %b" 
+PS1="%B%F{yellow}%~%f %F{white}$%f %b" 
 
 # Configure history
 HISTSIZE=100000
