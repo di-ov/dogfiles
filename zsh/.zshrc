@@ -24,8 +24,12 @@ setopt AUTO_CD # Automatically cd into typed directory.
 alias cp="cp -iv" \
 	  mv="mv -iv" \
 	  rm="rm -v" \
+	  car="cat" \
 	  mkdir="mkdir -pv" \
 	  ls="exa -g --group-directories-first" \
+	  sl="ls" \
+	  s="git status -sb" \
+	  gl="git log --all --decorate --oneline --graph" \
 	  grep="grep --color=auto" \
 	  g="git" \
 	  f="$FILE" \

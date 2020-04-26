@@ -8,4 +8,5 @@ mkdir -p ~/.config/i3status && ln -sfv $DOTFILES_DIR/activity-bar/i3status/confi
 
 ln -sfv $DOTFILES_DIR/zsh/.zshrc ~/.zshrc
 ln -sfv $DOTFILES_DIR/.xinitrc ~/.xinitrc
-ln -sfv $DOTFILES_DIR/.profile ~/.zprofile
+ln -sfv $DOTFILES_DIR/.zprofile ~/.zprofile
+mkdir -p ~/.config/alacritty && ln -sfv $DOTFILES_DIR/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
