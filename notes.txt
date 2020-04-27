@@ -1,11 +1,6 @@
 TODO:
 - Setup configured layouts i.e. ( 2horiz 1 vert)
-- Setup multi-monitor config
-- Configure "nnn"
-- All external binaries should be installed in /usr/local/bin --> make an env var for that
 - Setup Screenshoter "maim"  
-- Look into terminal file manger and set up with zsh widgets
-- Setup git status command with with zsh widgets
 - Setup kubernetes context in the bar
 
 Low prio TODO:
@@ -15,14 +10,8 @@ Low prio TODO:
 	https://serverfault.com/questions/240920/how-do-i-enable-non-free-packages-on-debian
 	https://unix.stackexchange.com/questions/284582/how-to-block-non-free-with-apt-preferences?noredirect=1&lq=1
 - See how to automate the config of xbacklight
-- See how to fix pcmanfm pop ups when used with i3 scratchpad
-- See where is the pcmanfm dotfiles folder
 - Check battery life settings and TLP - https://vitux.com/how-to-improve-notebook-battery-life-in-debian-with-tlp/
 - Use the i3-status-rust package for the bar
-
-
-
-
-Extra:
-- For automatic screen config - https://github.com/phillipberndt/autorandr
+- Fix nm-applet to pick up styles
+- check autorandr Hooks scripts and run the i3 layouts when screen is plugged in
 

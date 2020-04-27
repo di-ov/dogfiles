@@ -31,6 +31,7 @@ apt install intel-microcode \
  					   nnn  \
  			network-manager \
  	  network-manager-gnome \
+ 	  				lxrandr \
   				 	    zsh -y		 	    
 
 # Why microcode is needed refer to https://wiki.debian.org/Microcode
@@ -40,3 +41,5 @@ apt install intel-microcode \
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | tee /etc/apt/sources.list.d/brave-browser-release.list
 apt update && apt install brave-browser -y
+
+pip install autorandr

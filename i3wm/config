@@ -88,6 +88,7 @@ bindsym $mod+Shift+Right move right
 # =================================================================
 bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+d exec --no-startup-id dmenu_run
+bindsym $mod+F8 exec --no-startup-id autorandr --change   
 
 # =================================================================
 # i3 specific shortcuts
@@ -134,6 +135,10 @@ bindsym $mod+Shift+q move container to workspace $wsQ
 bindsym $mod+Shift+w move container to workspace $wsW
 bindsym $mod+Shift+e move container to workspace $wsE
 
+# assign workspaces to screens
+workspace $wsQ output HDMI1
+workspace $wsW output HDMI1
+
 # extra tweaks
 bindsym $mod+Tab workspace back_and_forth
 default_orientation vertical
@@ -150,9 +155,9 @@ for_window [class="vlc"] floating enable
 for_window [class="Microsoft Teams"] floating enable border none
 for_window [class="Pavucontrol"] floating enable
 for_window [class="feh"] floating enable
+for_window [class="Pcmanfm"] floating enable
 
-
-for_window [class="Pcmanfm"] move scratchpad
+# for_window [class="Pcmanfm"] move scratchpad
 
 assign [class="Brave-browser"] $ws1
 assign [class="jetbrains-datagrip"] $wsQ
@@ -187,6 +192,7 @@ bindsym $mod+r mode "resize"
 # =================================================================
 
 bar {
+        output primary
         status_command i3status
         separator_symbol " "
         strip_workspace_numbers yes
