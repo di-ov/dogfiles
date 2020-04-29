@@ -78,14 +78,14 @@
   # Set this to `None` to use the default theme variant.
   #gtk_theme_variant: None
 
-#scrolling:
+scrolling:
   # Maximum number of lines in the scrollback buffer.
   # Specifying '0' will disable scrolling.
-  #history: 10000
+  history: 20000
 
   # Number of lines the viewport will move for every line scrolled when
   # scrollback is enabled (history > 0).
-  #multiplier: 3
+  multiplier: 13
 
 # Font configuration
 font:
@@ -548,7 +548,7 @@ key_bindings:
 
   # (Windows, Linux, and BSD only)
   - { key: V,         mods: Control,                 action: Paste            }
-  #- { key: C,        mods: Control|Shift,           action: Copy             }
+  - { key: C,         mods: Control,                 action: Copy             }
   #- { key: C,        mods: Control|Shift, mode: Vi, action: ClearSelection   }
   #- { key: Insert,   mods: Shift,                   action: PasteSelection   }
   #- { key: Key0,     mods: Control,                 action: ResetFontSize    }

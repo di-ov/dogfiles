@@ -77,7 +77,6 @@ function get_context {
 zle -N get_context
 bindkey '^[OP' get_context
 
-
 # Get rid of some zle defaul keybindings
 bindkey -r "^W"
 
@@ -90,3 +89,4 @@ stty lnext undef
 stty discard undef
 stty quit undef
 stty rprnt undef
+stty intr ^K # Set interrupt to ctrl+K

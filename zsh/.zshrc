@@ -19,12 +19,16 @@ autoload -Uz compinit && compinit
 source ~/dogfiles/zsh/shortcuts.sh
 
 # Misc
-setopt AUTO_CD # Automatically cd into typed directory.
+setopt AUTO_CD # Automatically cd into typed directory. 
+zle_highlight+=(paste:none) # Disables text appearing selected when pasted in the zle.
+
+# autoload -Uz predict-on && predict-on
 
 alias cp="cp -iv" \
 	  mv="mv -iv" \
 	  rm="rm -v" \
 	  car="cat" \
+	  ca="cat" \
 	  mkdir="mkdir -pv" \
 	  ls="exa -g --group-directories-first" \
 	  sl="ls" \
