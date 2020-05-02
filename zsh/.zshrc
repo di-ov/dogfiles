@@ -38,7 +38,7 @@ alias cp="cp -iv" \
 	  g="git" \
 	  f="$FILE" \
 	  e="$EDITOR" \
-	  t="$TERM" 
+	  t="$TERMINAL" 
 
 	
 
