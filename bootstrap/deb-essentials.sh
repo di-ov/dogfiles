@@ -43,4 +43,4 @@ curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | apt-key 
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | tee /etc/apt/sources.list.d/brave-browser-release.list
 apt update && apt install brave-browser -y
 
-pip install autorandr
+apt install python-pip -y && pip install autorandr
