@@ -32,6 +32,7 @@ apt install intel-microcode \
  			network-manager \
  	  network-manager-gnome \
  	  				lxrandr \
+ 	  				  xclip \
   				 	    zsh -y		 	    
 
 # Why microcode is needed refer to https://wiki.debian.org/Microcode
