@@ -1,0 +1,19 @@
+{
+  "editor.minimap.enabled": false,
+  "window.menuBarVisibility": "hidden",
+  "workbench.startupEditor": "none",
+  "terminal.external.linuxExec": "alacritty",
+  "terminal.explorerKind": "external",
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "workbench.activityBar.visible": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.renderWhitespace": "boundary",
+
+  "files.associations": {
+    "Dockerfile.*": "dockerfile"
+  }
+}
