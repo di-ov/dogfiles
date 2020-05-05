@@ -10,10 +10,32 @@
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.renderWhitespace": "boundary",
+  "editor.fontFamily": "Jetbrains Mono",
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
 
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "files.associations": {
     "Dockerfile.*": "dockerfile"
+  },
+
+  "workbench.colorTheme": "One Monokai Darker",
+  "workbench.colorCustomizations": {
+    //     "sideBar.background": "#1e1e1e",
+    "tab.activeBorder": "#c2a90f",
+    // "tab.activeBackground": "#282828",
+    "tab.inactiveBackground": "#1e1e1e",
+    "activityBar.background": "#1e1e1e",
+    "statusBar.background": "#1e1e1e",
+    "editorGroupHeader.tabsBackground": "#1e1e1e"
   }
 }
