@@ -32,6 +32,7 @@ alias cp="cp -iv" \
 	  mkdir="mkdir -pv" \
 	  ls="exa -g --group-directories-first" \
 	  sl="ls" \
+	  ll="ls -l" \
 	  s="git status -sb" \
 	  gl="git log --all --decorate --oneline --graph" \
 	  grep="grep --color=auto" \

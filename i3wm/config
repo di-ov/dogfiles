@@ -110,7 +110,7 @@ bindsym $mod+9 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do 
 # Workspaces
 # =================================================================
 set $ws1 "1:   1  " 
-set $ws2 "2:   2  "
+set $ws2 "2:  { } 2  "
 set $ws3 "3:  ~$ 3  "
 set $wsQ "4:  ~$ q  "
 set $wsW "5:  w  "
@@ -215,7 +215,7 @@ bar {
 # =================================================================
 
 # Setup language toggle
-exec --no-startup-id "setxkbmap -option 'grp:alt_shift_toggle' -layout us,bg -variant ,phonetic"
+exec --no-startup-id "setxkbmap -option 'grp:lctrl_lwin_toggle' -layout us,bg -variant ,phonetic"
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 20
