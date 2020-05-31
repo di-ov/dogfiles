@@ -30,7 +30,7 @@
 
   "workbench.colorTheme": "One Monokai Darker",
   "workbench.colorCustomizations": {
-    //     "sideBar.background": "#1e1e1e",
+    "sideBar.background": "#1e1e1e",
     "tab.activeBorder": "#c2a90f",
     // "tab.activeBackground": "#282828",
     "tab.inactiveBackground": "#1e1e1e",

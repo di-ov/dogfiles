@@ -47,3 +47,6 @@ apt update && apt install brave-browser -y
 apt install python-pip -y && pip install autorandr
 
 curl https://getmic.ro | bash && mv micro /usr/local/bin
+
+# 
+# For the dell to work you might need to install xserver-xorg-video-intel

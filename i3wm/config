@@ -215,7 +215,7 @@ bar {
 # =================================================================
 
 # Setup language toggle
-exec --no-startup-id "setxkbmap -option 'grp:lctrl_lwin_toggle' -layout us,bg -variant ,phonetic"
+exec --no-startup-id "setxkbmap -option 'grp:win_space_toggle' -layout us,bg -variant ,phonetic"
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 20
