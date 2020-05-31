@@ -27,8 +27,6 @@
   "files.associations": {
     "Dockerfile.*": "dockerfile"
   },
-
-  "workbench.colorTheme": "One Monokai Darker",
   "workbench.colorCustomizations": {
     "sideBar.background": "#1e1e1e",
     "tab.activeBorder": "#c2a90f",
