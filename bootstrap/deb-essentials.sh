@@ -26,9 +26,8 @@ apt install intel-microcode \
  				 	   htop \
  				 pulseaudio \
  				pavucontrol \
- 					   cmus \
+ 					   vlc  \
  					   feh  \
- 					   nnn  \
  			network-manager \
  	  network-manager-gnome \
  	  				lxrandr \
@@ -47,6 +46,8 @@ apt update && apt install brave-browser -y
 apt install python-pip -y && pip install autorandr
 
 curl https://getmic.ro | bash && mv micro /usr/local/bin
+
+# TODO: fetch nnn binary
 
 # 
 # For the dell to work you might need to install xserver-xorg-video-intel
