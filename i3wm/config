@@ -136,8 +136,8 @@ bindsym $mod+Shift+w move container to workspace $wsW
 bindsym $mod+Shift+e move container to workspace $wsE
 
 # assign workspaces to screens
-workspace $wsQ output HDMI1
-workspace $wsW output HDMI1
+workspace $wsQ output HDMI-1
+workspace $wsW output HDMI-1
 
 # extra tweaks
 bindsym $mod+Tab workspace back_and_forth

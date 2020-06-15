@@ -30,6 +30,7 @@ apt install intel-microcode \
  					   feh  \
  			network-manager \
  	  network-manager-gnome \
+	   				  unzip \
  	  				lxrandr \
  	  				  xclip \
   				 	    zsh -y		 	    

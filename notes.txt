@@ -1,4 +1,6 @@
 TODO:
+- Automate internet connection when in minimal env - https://unix.stackexchange.com/questions/283722/how-to-connect-to-wifi-from-command-line
+- open terminal in current dir, fuzzy find start terminal menu
 - Setup configured layouts i.e. ( 2horiz 1 vert)
 - Setup Screenshoter "maim"  
 - Setup kubernetes context in the bar

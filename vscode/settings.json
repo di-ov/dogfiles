@@ -35,5 +35,6 @@
     "activityBar.background": "#1e1e1e",
     "statusBar.background": "#1e1e1e",
     "editorGroupHeader.tabsBackground": "#1e1e1e"
-  }
+  },
+  "workbench.editor.enablePreview": false
 }
