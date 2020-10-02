@@ -30,9 +30,10 @@ alias cp="cp -iv" \
 	  car="cat" \
 	  ca="cat" \
 	  mkdir="mkdir -pv" \
-	  ls="exa -g --group-directories-first" \
+	  ls="exa -g --group-directories-first --sort=Extension" \
 	  sl="ls" \
 	  ll="ls -l" \
+	  la="ls -l --all --all" \
 	  s="git status -sb" \
 	  gl="git log --all --decorate --oneline --graph" \
 	  grep="grep --color=auto" \
