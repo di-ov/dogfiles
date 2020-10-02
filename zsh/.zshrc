@@ -35,7 +35,7 @@ alias cp="cp -iv" \
 	  ll="ls -l" \
 	  la="ls -l --all --all" \
 	  s="git status -sb" \
-	  gl="git log --all --decorate --oneline --graph" \
+	  gl="git log --pretty=format:'%Cred%H%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -11" \
 	  grep="grep --color=auto" \
 	  g="git" \
 	  f="$FILE" \
