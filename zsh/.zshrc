@@ -41,8 +41,3 @@ alias cp="cp -iv" \
 	  f="$FILE" \
 	  e="$EDITOR" \
 	  t="$TERMINAL" 
-
-	
-
-# source ~/dogfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh # Enable auto suggestions
-# source ~/dogfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh # Enable line syntax higlighting, must be at the end
