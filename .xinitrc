@@ -7,6 +7,6 @@ xrdb ~/.Xresources &
 # nm-applet & # this one is currently ran by i3wm
 
 # Set wallpaper
-feh --bg-center ~/.wallpaper.jpg
+feh --bg-fill ~/.wallpaper.jpg
 
 exec i3
