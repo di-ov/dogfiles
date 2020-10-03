@@ -67,7 +67,7 @@ function run_nnn {
      zle reset-prompt
 }
 zle -N run_nnn
-bindkey '^[OQ' run_nnn
+bindkey '^[OQ' run_nnn # Bound to F2
 
 # Get kubernetes context with a shortcut
 function get_context {
@@ -75,7 +75,17 @@ function get_context {
    zle reset-prompt
 }
 zle -N get_context
-bindkey '^[OP' get_context
+bindkey '^[OP' get_context  # Bound to F1
+
+# Adds sudo in the begging of the zle
+function prepend-sudo() {
+  if [[ "$BUFFER" != su(do|)\ * ]]; then
+    BUFFER="sudo $BUFFER"
+    (( CURSOR += 5 ))
+  fi
+}
+zle -N prepend-sudo
+bindkey '^[OR' prepend-sudo # Bound to F3
 
 # Get rid of some zle defaul keybindings
 bindkey -r "^W"
