@@ -89,6 +89,7 @@ bindsym $mod+Shift+Right move right
 bindsym $mod+Return exec --no-startup-id alacritty
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+F8 exec --no-startup-id autorandr --change   
+bindsym Print exec --no-startup-id deepin-screenshot --save-path ~/quick-shot.png
 
 # =================================================================
 # i3 specific shortcuts
