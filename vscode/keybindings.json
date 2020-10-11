@@ -53,7 +53,7 @@
     "command": "-workbench.action.previousEditor"
   },
   {
-    "key": "alt+right",
+    "key": "ctrl+'",
     "command": "editor.action.revealDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
@@ -203,5 +203,67 @@
     "key": "shift+end",
     "command": "-cursorEndSelect",
     "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.explorer"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer"
+  },
+  {
+    "key": "alt+right",
+    "command": "workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward"
+  },
+  {
+    "key": "ctrl+alt+up",
+    "command": "cursorPageUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "pageup",
+    "command": "-cursorPageUp",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+alt+down",
+    "command": "cursorPageDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "pagedown",
+    "command": "-cursorPageDown",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "pageup",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
+  {
+    "key": "pagedown",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "workbench.view.scm",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
+  },
+  {
+    "key": "ctrl+shift+g g",
+    "command": "-workbench.view.scm",
+    "when": "gitlens:enabled && config.gitlens.keymap == 'chorded'"
   }
 ]
