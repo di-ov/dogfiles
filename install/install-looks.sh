@@ -2,7 +2,7 @@ DOTFILES_DIR=~/dogfiles
 
 ln -sfv $DOTFILES_DIR/looks/.Xresources ~/.Xresources
 ln -sfv $DOTFILES_DIR/looks/gtk2.0/.gtkrc-2.0 ~/.gtkrc-2.0
-ln -sfv $DOTFILES_DIR/looks/gtk-3.0/.settings.ini ~/.config/gtk-3.0/.settings.ini
+ln -sfv $DOTFILES_DIR/looks/gtk-3.0/settings.ini ~/.config/gtk-3.0/settings.ini
 
 ln -sfv $DOTFILES_DIR/looks/.wallpaper.jpg ~/.wallpaper.jpg
 
