@@ -2,7 +2,6 @@ TODO:
 - Automate internet connection when in minimal env - https://unix.stackexchange.com/questions/283722/how-to-connect-to-wifi-from-command-line
 - open terminal in current dir, fuzzy find start terminal menu
 - Setup configured layouts i.e. ( 2horiz 1 vert)
-- Setup Screenshoter "maim"  
 - Setup kubernetes context in the bar
 
 Low prio TODO:
@@ -14,6 +13,5 @@ Low prio TODO:
 - See how to automate the config of xbacklight
 - Check battery life settings and TLP - https://vitux.com/how-to-improve-notebook-battery-life-in-debian-with-tlp/
 - Use the i3-status-rust package for the bar
-- Fix nm-applet to pick up styles
 - check autorandr Hooks scripts and run the i3 layouts when screen is plugged in
 
