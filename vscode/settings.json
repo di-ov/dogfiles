@@ -29,6 +29,7 @@
   },
   "workbench.colorCustomizations": {
     "sideBar.background": "#1e1e1e",
+    "sideBar.border": "#2e1e1a",
     "tab.activeBorder": "#c2a90f",
     // "tab.activeBackground": "#282828",
     "tab.inactiveBackground": "#1e1e1e",

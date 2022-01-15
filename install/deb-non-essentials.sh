@@ -3,8 +3,6 @@ sudo apt install openvpn
 sudo apt install network-manager-openvpn-gnome
 
 # To consider, check websites:
-# vscode, kubectl, skaffold, helm, minikube (needs socat), docker, docker-compose, node, Db client (datagrip)
+# vscode, kubectl, skaffold, helm, docker, docker-compose, node
 
-# Need deb package download:
-# teams, zoom, vscode
 
