@@ -161,7 +161,6 @@ for_window [class="Pcmanfm"] floating enable
 # for_window [class="Pcmanfm"] move scratchpad
 
 assign [class="Brave-browser"] $ws1
-assign [class="jetbrains-datagrip"] $wsQ
 assign [class="Microsoft Teams"] $wsE
 assign [class="zoom"] $wsE
 

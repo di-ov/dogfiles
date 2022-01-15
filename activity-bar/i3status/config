@@ -3,6 +3,7 @@ general {
         interval = 10
 }
 
+order += "disk /"
 order += "volume master"
 order += "battery all"
 order += "tztime local"
@@ -26,4 +27,8 @@ volume master {
         device = "default"
         mixer = "Master"
         mixer_idx = 0
+}
+
+disk "/" {
+        format = "%avail"
 }
