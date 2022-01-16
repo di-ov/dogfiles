@@ -156,7 +156,8 @@ for_window [class="vlc"] floating enable
 for_window [class="Microsoft Teams"] floating enable border none
 for_window [class="Pavucontrol"] floating enable
 for_window [class="feh"] floating enable
-for_window [class="Pcmanfm"] floating enable
+# for_window [class="Pcmanfm"] floating enable
+# for_window [class="Sublime_text"] floating enable
 
 # for_window [class="Pcmanfm"] move scratchpad
 

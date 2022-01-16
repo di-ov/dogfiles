@@ -38,6 +38,6 @@ alias cp="cp -iv" \
 	  gl="git log --pretty=format:'%Cred%H%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' -11" \
 	  grep="grep --color=auto" \
 	  g="git" \
-	  f="$FILE" \
+	  f="nohup $FILE > /dev/null 2>&1 &" \
 	  e="$EDITOR" \
 	  t="$TERMINAL" 

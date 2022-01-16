@@ -1,7 +1,7 @@
 # Profile file, runs on login.
 
 # System wide env
-export EDITOR="code"
+export EDITOR="subl"
 export FILE="pcmanfm"
 export TERMINAL="alacritty"
 export EXTERNAL_BIN="/usr/local/bin"
