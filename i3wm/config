@@ -54,7 +54,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ to
 # Floating
 # =================================================================
 floating_modifier $mod
-floating_maximum_size 1400 x 900
+floating_maximum_size 1600 x 900
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -156,8 +156,8 @@ for_window [class="vlc"] floating enable
 for_window [class="Microsoft Teams"] floating enable border none
 for_window [class="Pavucontrol"] floating enable
 for_window [class="feh"] floating enable
-# for_window [class="Pcmanfm"] floating enable
-# for_window [class="Sublime_text"] floating enable
+for_window [class="Pcmanfm"] floating enable
+for_window [class="Sublime_text"] floating enable
 
 # for_window [class="Pcmanfm"] move scratchpad
 
