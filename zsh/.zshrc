@@ -39,5 +39,6 @@ alias cp="cp -iv" \
 	  grep="grep --color=auto" \
 	  g="git" \
 	  f="nohup $FILE > /dev/null 2>&1 &" \
+	  c="ncal -bM3" \
 	  e="$EDITOR" \
 	  t="$TERMINAL" 
