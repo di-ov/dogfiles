@@ -57,10 +57,10 @@ floating_modifier $mod
 floating_maximum_size 1600 x 900
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+h floating toggle
 
 # change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
+bindsym $mod+g focus mode_toggle
 
 # The right button toggles floating
 bindsym --whole-window $mod+button3 floating toggle
@@ -86,7 +86,7 @@ bindsym $mod+Shift+Right move right
 # =================================================================
 # General shortcuts
 # =================================================================
-bindsym $mod+Return exec --no-startup-id alacritty
+bindsym $mod+Return exec --no-startup-id $TERMINAL
 bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+F8 exec --no-startup-id autorandr --change   
 bindsym Print exec --no-startup-id deepin-screenshot --save-path ~/quick-shot.png
@@ -113,7 +113,7 @@ bindsym $mod+9 exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do 
 set $ws1 "1:   1  " 
 set $ws2 "2:  { } 2  "
 set $ws3 "3:  ~$ 3  "
-set $wsQ "4:  ~$ q  "
+set $wsQ "4:  { } q  "
 set $wsW "5:  w  "
 set $wsE "6:   e  "
 set $ws7 "7:    "
@@ -137,8 +137,8 @@ bindsym $mod+Shift+w move container to workspace $wsW
 bindsym $mod+Shift+e move container to workspace $wsE
 
 # assign workspaces to screens
-workspace $wsQ output HDMI-1
-workspace $wsW output HDMI-1
+workspace $ws2 output DP-2
+workspace $wsW output DP-2
 
 # extra tweaks
 bindsym $mod+Tab workspace back_and_forth
